@@ -1,0 +1,51 @@
+<!DOCTYPE html> <!-- this is an html5 document -->
+<html lang="fr"> <!-- our page in in french -->
+    <head>
+        <!-- character encoding of the page -->
+        <meta charset="utf-8">
+        <!-- set viewport correctly so that the page displays full width on mobiel devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+        <!-- Our own CSS. Please note that HTML and SVG CSS are in separate files, are they contain different kinds
+        of properties. This also help to validate them separatly (with proper options for SVG) in the W3C CSS validator-->
+        <link rel="stylesheet" href="css/html.css">
+        <link rel="stylesheet" href="css/svg.css">
+         <title>TestHyblab</title>
+    </head>
+    <body>
+        <!-- declare the container that will host our web app -->
+        <div id='container' class='container'> <!-- class="container" is needed for bootstrap -->
+            <!-- html5 header -->
+            <header class='col-md-12'> <!-- See bootstrap CSS documentation to get the meaning of the 'col-md-6' and 
+            'col-md-12' class used here and after -->
+                <h1>Application de test Hyblab</h1>
+            </header>
+            <!-- our main content-->
+            <div id=content>
+                <!-- text section of our web page. -->
+                <section id='texte' class='col-md-6'>
+                    <h3>Liste et état des parkings de Nantes</h3>
+                </section>
+                <!-- graph section of our web page -->
+                <section id='graph' class='col-md-6'>
+                    <h3>Graph des places disponibles</h3>
+                </section>
+            </div>
+            <!-- html5 footer -->
+            <footer class='col-md-12'>
+                <p class='col-md-6'>Copyright Matthieu PERREIRA DA SILVA - 2014</p>
+                <p class='col-md-6'>Données issues de l'opendata Nantais <a href='http://data.nantes.fr/'>http://data.nantes.fr/</a></p>
+            </footer>
+        </div>
+        <!-- For performance reasons, scripts are loaded at the end of body -->
+        <!-- load jquery library -->
+        <script src="jquery/dist/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- load d3js -->
+        <script src="d3/d3.min.js"></script>
+        <!-- load our scripts -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
